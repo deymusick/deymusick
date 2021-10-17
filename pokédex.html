@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+
+        }
+        header{
+            background-color: #c00d0d;
+            color: white;
+            padding: 0 10%;
+        }
+        header > h1{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        #logo{
+            background-color: #c00d0d; 
+            color: #c00d0d;
+            float: left;
+            width: 80px;
+            height: 81px;
+        }
+        nav {
+            margin: 10px 10%;
+        }
+        nav > a{
+            padding: 0 10px;
+        }
+        #pokedex {
+            width: 750px;
+            margin: 50px auto;
+        }
+        #left {
+            width: 250px;
+            height: 300px;
+            float: left;
+            background-color: #c00d0d;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        #right {
+            width: 250px;
+            height: 250px;
+            margin-top: 50px;
+            background-color: #c00d0d;
+            border-left-color: #8b0000;
+            border-left-style: solid;
+            border-left-width: 3px;
+            float: left;
+            border-bottom-right-radius: 30px;
+        }
+        .display{
+            border-color: #494949;
+            border-style: solid;
+            border-radius: 15px;
+            border-width: 5px;
+        }
+        #left > .display{
+            width: 180px;
+            height: 150px;
+            margin-left: 35px;
+            margin-top: 40px;
+            background-color: white;
+        }
+        #left > .display > img{
+            margin-left: 15px;
+            height: 100%;
+        }
+        
+        #dpad{
+            width: 60px;
+            height: 60px;
+            margin-top: 15px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        #dpad-top, #dpad-bottom{
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+            background-color: #222222;
+        }
+        #dpad-horizontal{
+            width: 60px;
+            height: 20px;
+            background-color: #222222;
+        }
+        #btn-circle{
+            width: 50px;
+            height: 50px;
+            margin-left: 95px;
+            border-style: solid;
+            border-color: #181a81;
+            border-radius: 25px;
+            background-color: #0631e6;
+            display:inline-block;
+        }    
+        #right > .display {
+            width: 180px;
+            height: 120px;
+            margin-left: 35px;
+            margin-top: 20px;
+            background-color: green;
+            font-size: 20px;
+        }
+
+        #pad{
+            width: 148px;
+            height: 65px;
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+        #pad > .btn{
+            width: 25px;
+            height: 25px;
+            background-color: #0631e6;
+            display: inline-block;
+            border-style: solid;
+            border-color: #181a81;
+            border-width: 2px;
+            border-radius: 3px;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0; 
+        }
+        li{
+            list-style-type: none;
+        }
+        li > p {
+            margin: 0 5px;
+        }
+    </style>
+    <header>
+        <img id="logo" src="assets/poke.drawio.png" alt="pokedex">
+        <h1 style="text-align: center; ">proyecto mi pokedex</h1>
+    </header>
+    
+    <nav>
+        <a href="#" style="float:left">inicio</a>
+
+        <a href="#">aserca de</a>
+    </nav>
+    <hr> 
+<main>
+    <div id="pokedex">
+    <div id="izquierda"></div>
+    <div id="left"  id="planilla izquierda">
+        <img class="display" style="height: 150px; width: 150px;" src="assets/R.png" alt="pokemon">
+    </div>
+
+    <div id="dpad">
+    <div id="dpad-top"></div>
+    <div id="dpad-horizontal"></div>
+    <div id="dpad-bottom"></div>
+    </div>
+    <div id="btn-circle"></div>
+    <div id="right" id="dercha">
+    <div id="pantalla-derecha" class="display">
+        <!--lista no ordenada-->
+        <ul>
+            <!--articulo de la lista-->
+            <li>
+                <p style="font-size:x-small;"><b>nombre:</b>dito</p>
+            </li>
+            <li>
+                <p style="font-size: x-small"><b>tipo:</b>normal</p>
+            </li>
+            <li>
+                <p style="font-size:x-small;"><b>altura:</b> 30cm</p>
+            </li>
+            <li>
+                <p style="font-size:x-small;"><b>peso:</b> 1kg</p>
+            </li>
+            <li>
+                <p style="font-size:x-small;"><b>descripcion:</b>puede alterar por complecto su estructura celular para emular cualquier objeto que vea.</p>
+            </li>
+        </ul>
+</div>
+    <div id="pad" >
+        <div id="boton" ></div>
+        <div id="boton" ></div>
+        <div id="boton" ></div>
+        <div id="boton" ></div>      
+        <div id="boton" ></div>
+        <div id="boton" ></div>
+        <div id="boton" ></div>
+        <div id="boton" ></div>      
+    </div>
+</div>
+</main>
+</body>
+</html>
